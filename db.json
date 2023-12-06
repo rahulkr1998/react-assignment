@@ -1,0 +1,62 @@
+{
+  "admin": {
+    "email": "admin@gmail.com",
+    "password": "adminpassword"
+  },
+  "vendors": [
+    {
+      "id": "9c0061ef-26fd-42c0-b23c-fd43326f23dd",
+      "name": "vendor2",
+      "email": "vendor2@gmail.com",
+      "password": "vendor2",
+      "isActive": true,
+      "category": "Cosmetics",
+      "description": "make"
+    },
+    {
+      "id": "4dd11ea5-e906-4720-aa01-a3562b9308e5",
+      "name": "soham",
+      "email": "soham1@gmail.com",
+      "password": "soham",
+      "isActive": true,
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "1feed1ea-633f-44a1-a0c7-d32d923e1691",
+      "name": "Soham Satapati",
+      "email": "soham@gmail.com",
+      "password": "soham",
+      "isActive": false,
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "3da3b7e2-f94f-44b7-ae75-28d8528187ab",
+      "name": "vendor4",
+      "email": "vendor4@gmail.com",
+      "password": "vendor4",
+      "isActive": false,
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "66f4f5df-9546-45f6-84e7-31eb2f0efbfd",
+      "name": "test1",
+      "email": "test1@gmail.com",
+      "password": "test1",
+      "isActive": false,
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "1090dc9c-f770-48ac-aec2-67aca5d71c9e",
+      "name": "CodeClouds",
+      "email": "codeclouds@gmail.com",
+      "password": "codeclouds",
+      "isActive": true,
+      "category": "Electronics",
+      "description": "we make softwares"
+    }
+  ]
+}
