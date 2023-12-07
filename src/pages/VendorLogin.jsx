@@ -24,6 +24,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom' ;
+import Dashboard from './Dashboard';
 
 function Copyright(props) {
 
@@ -105,6 +106,8 @@ export default function VendorLogin({ onLogin }) {
   };
 
   return (
+  <>
+  <Dashboard/>
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -177,5 +180,6 @@ export default function VendorLogin({ onLogin }) {
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>
+    </>
   );
 }

@@ -9,7 +9,7 @@
       "name": "vendor2",
       "email": "vendor2@gmail.com",
       "password": "vendor2",
-      "isActive": true,
+      "isActive": false,
       "category": "Cosmetics",
       "description": "make"
     },

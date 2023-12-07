@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
 import { Link, useNavigate } from 'react-router-dom';
+import Dashboard from './Dashboard';
 
 function Copyright(props) {
   return (
@@ -87,6 +88,8 @@ const handleSubmit = async e => {
     }
   };
   return (
+    <>
+    <Dashboard/>
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -171,5 +174,6 @@ const handleSubmit = async e => {
         <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
+    </>
   );
 }

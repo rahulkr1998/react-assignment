@@ -25,27 +25,6 @@ const handleVendorLogin = (loggedIn) => {
 };
 
   return (
-  //   <BrowserRouter>
-  //   <Routes>
-  //     <Route path="/" element={<Dashboard />} />
-  //     <Route path="/adminlogin" element={<AdminLogin onLogin={handleAdminLogin}/>} />
-  //     <Route path="/vendorlogin" element={<VendorLogin />} />
-  //     <Route path="/signup" element={<SignUp />} />
-  //     <Route path="/admindashboard" element={<AdminDashboard />} />
-  //     <Route
-  //         path="/adminlogin"
-  //         element={isAdminLoggedIn ? <Navigate to="/admindashboard" /> : <AdminLogin />}
-  //       />
-  //       {/* <Route
-  //         path="/login"
-  //         element={<Login onLogin={handleLogin} />}
-  //       /> */}
-  //       <Route
-  //         path="/vendorlogin"
-  //         element={isVendorLoggedIn ? <Navigate to="/admindashboard" /> :  <VendorLogin /> }
-  //       />
-  //   </Routes>
-  // </BrowserRouter>
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<LoginBoard />} />
@@ -61,13 +40,7 @@ const handleVendorLogin = (loggedIn) => {
     />
     <Route
       path="/vendorlogin"
-      element={
-        isVendorLoggedIn ? (
-          <Navigate to="/vendordashboard" />
-        ) : (
-          <VendorLogin onLogin={handleVendorLogin} />
-        )
-      }
+      element={<VendorLogin onLogin={handleVendorLogin} />}
     />
     <Route path="/signup" element={<SignUp />} />
     <Route path="/admindashboard" element={<AdminDashboard />} />

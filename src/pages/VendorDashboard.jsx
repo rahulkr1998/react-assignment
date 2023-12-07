@@ -118,8 +118,18 @@ export default function VendorDashboard() {
     margin: "50px auto"
     };
 
+    const sorryDiv = {
+      maxWidth: "70%",
+      margin: "50px auto",
+      textAlign: "center",
+      fontWeight: "700"
+      };
+
   if (isActiveUser === false) {
-    return <div>Sorry Your status is inActive, Contact Admin !</div>; // You can replace this with your preferred loading indicator
+    return <>
+    <Dashboard/>
+    <div style={sorryDiv}>Sorry Your status is inActive, Contact Admin !</div>;
+    </> // You can replace this with your preferred loading indicator
   }
 
   return (
